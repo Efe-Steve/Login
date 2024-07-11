@@ -1,0 +1,285 @@
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+  
+  --grey: #808080;
+  --gold: #ffd700;
+  --red: #dc3545;
+  --black: #000;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.login-container, .todo-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--black);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+form , .add-task {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+form input, .add-task input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  border-bottom: yellow solid 2px;
+  outline: none;
+  background-color: transparent;
+  color: aliceblue;
+}
+
+form button, .add-task button {
+    /* display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; */
+
+    padding: 8px 15px;
+    background-color: #ffff00;
+    color: var(--black);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0 10px 10px 0px;
+}
+
+button:hover {
+  background-color: #ffee04a8;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--gold);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  color: white;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  gap:10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+li  input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  border-bottom: yellow solid 2px;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+
+li button {
+  padding: 8px 15px;
+  background-color: #ffff00;
+  color: var(--black);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 0 10px 10px 0px;
+}
+
+
+
+
+/* body,html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.login-container, .todo-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+  
+  --grey: #808080;
+  --gold: #ffd700;
+  --red: #dc3545;
+  --black: #000;
+}
+
+body,html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+
+ .login-container, .todo-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+} */
+
+/*
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--gold);
+}
+
+h1 .list-icon {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.add-task {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  border-bottom: yellow solid 2px;
+  outline: none;
+  background-color: transparent;
+  color: aliceblue;
+}
+
+.add-task button {
+  padding: 8px 15px;
+  background-color: #ffff00;
+  color: var(--black);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 0 10px 10px 0px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  margin-bottom: 5px;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-list li span {
+  cursor: pointer;
+}
+
+.task-list li button {
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+} */
