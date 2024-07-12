@@ -8,9 +8,12 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (email === 'user@example.com' && password === 'password' || email ==="above@gmail.com" && password === "above1234") {
+    if (
+      (email === 'user@example.com' && password === 'password') ||
+      (email === 'Efemena@gmail.com' && password === 'mena1234')
+    ) {
       localStorage.setItem('isAuthenticated', 'true');
-      navigate('/');
+      navigate('TodoList');
     } else {
       alert('Invalid email or password');
     }

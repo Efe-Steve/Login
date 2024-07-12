@@ -1,26 +1,21 @@
 import React from 'react';
-import Login from './login';
-import { BrowserRouter as Router,Routes,Route, } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Login from './Login';
 import TodoList from './Components/TodoList';
 import PrivateRoute from './Components/PrivateRoute';
-// import Login from './components/Login';
-// import TodoList from './components/TodoList';
-// import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
-    
     <Routes>
       <Route path="/" element={<Login />} />
       <Route
-        path="/login"
+        path="/TodoList"
         element={
           <PrivateRoute>
             <TodoList />
           </PrivateRoute>
         }
       />
-      {/* <Route path="*" element={<Navigate to="/" />} /> */}
     </Routes>
   );
 }
